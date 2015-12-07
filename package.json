@@ -2,7 +2,7 @@
   "name": "@micro-js/create-action",
   "description": "Action creator creator for flux standard actions",
   "repository": "git://github.com/micro-js/create-action.git",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
