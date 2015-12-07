@@ -8,9 +8,7 @@
   "scripts": {
     "postversion": "git push && git push --tags && npm publish --access=public"
   },
-  "dependencies": {
-    "@micro-js/identity": "^1.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "tape": "^4.2.2"
   }
