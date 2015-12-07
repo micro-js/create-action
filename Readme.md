@@ -16,7 +16,11 @@ Action creator creator for flux standard actions.  Very similar to the function 
 
 ```js
 var createAction = require('@micro-js/create-action')
-createAction(UPDATE_ITEM)
+var incrementBy = createAction(INCREMENT_BY)
+
+// ...
+
+dispatch(incrementBy(2))
 ```
 
 ## API
