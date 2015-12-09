@@ -33,6 +33,43 @@ dispatch(incrementBy(2))
 
 **Returns:** An action creator that creates an action according to the arguments specified.
 
+## toString sugar
+
+Action creators returned by `createAction` override `Function.prototype.toString`, and instead return the type string. This allows the function to double as the action type, for useThis means that instead of writing this:
+
+```javascript
+const SET_TEXT = 'SET_TEXT'
+const setText = createAction('SET_TEXT')
+
+export {
+  setText,
+  SET_TEXT
+}
+```
+
+You can just write this:
+
+```javascript
+export default createAction('SET_TEXT')
+```
+
+And then use it in a [reducer map](http://github.com/micro-js/handle-actions), like this:
+
+```javascript
+combineReducers({
+  text: handleActions({
+    [setText]: (state, text) => text
+  })
+})
+```
+
+## type property
+
+If abusing `toString` as above makes you squeamish, then the type is also set on the `type` property of the action creator, so that you can access it that way as well, if you prefer.
+
+
+
+
 ## License
 
 MIT
