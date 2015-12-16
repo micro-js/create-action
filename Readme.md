@@ -10,12 +10,12 @@ Action creator creator for flux standard actions.  Very similar to the function 
 
 ## Installation
 
-    $ npm install @micro-js/create-action
+    $ npm install @f/create-action
 
 ## Usage
 
 ```js
-var createAction = require('@micro-js/create-action')
+var createAction = require('@f/create-action')
 var incrementBy = createAction(INCREMENT_BY)
 
 // ...
@@ -80,5 +80,5 @@ MIT
 [git-url]: https://github.com/micro-js/create-action
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat
 [standard-url]: https://github.com/feross/standard
-[npm-image]: https://img.shields.io/npm/v/@micro-js/create-action.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/@micro-js/create-action
+[npm-image]: https://img.shields.io/npm/v/@f/create-action.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@f/create-action
