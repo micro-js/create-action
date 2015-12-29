@@ -35,7 +35,7 @@ dispatch(incrementBy(2))
 
 ## toString sugar
 
-Action creators returned by `createAction` override `Function.prototype.toString`, and instead return the type string. This allows the function to double as the action type, for useThis means that instead of writing this:
+Action creators returned by `createAction` override `Function.prototype.toString`, and instead return the type string. This allows the function to double as the action type, which means that instead of writing this:
 
 ```javascript
 const SET_TEXT = 'SET_TEXT'
@@ -66,8 +66,6 @@ combineReducers({
 ## type property
 
 If abusing `toString` as above makes you squeamish, then the type is also set on the `type` property of the action creator, so that you can access it that way as well, if you prefer.
-
-
 
 
 ## License
